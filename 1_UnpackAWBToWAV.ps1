@@ -28,7 +28,7 @@ for ($i = 0; $i -le $max_id; $i +=1) {
 	} else {
 		$new_id = [string]$i
 		$new_id = $new_id.PadLeft($id_length, '0')
-		$arr = ,@($i, $ids[0][0], ($new_id + "_" + $ids[0][0]))
+		$arr = ,@($i, $ids[0][0], ($new_id + "_" + "UNUSED"))
 		$new_files += $arr
 	}
 }
