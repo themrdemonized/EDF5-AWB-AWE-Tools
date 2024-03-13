@@ -8,7 +8,7 @@ AWB editing is dividing into 3 steps
 
 Tools used:
 
-awe_parser.py from Another EDF Tools repo with my edits to handle different file counts in AWB and AWE
-AWB_repacker
-HCA decoder
-VGAudioCli
+* awe_parser.py from Another EDF Tools repo with my edits to handle different file counts in AWB and AWE
+* AWB_repacker
+* HCA decoder
+* VGAudioCli
