@@ -1,3 +1,10 @@
+echo "AWE Parser will ask for AWE, AWB files and output directory"
+echo "Please drag VOICES_IN directory as output"
+pause
+
+$folderOut = ".\VOICES_IN"
+invoke-expression 'cmd /c .\awe_parser.exe'
+ 
 $ids = @{}
 $new_files = @()
 $max_id = 0
@@ -31,4 +38,11 @@ foreach ($f in $new_files) {
 	$d = $folder + "\" + $f[2]
 	echo ("$p -> $d")
 	Copy-Item -Path $p -Destination $d
+}
+
+$folderIn = ".\VOICES_IN"
+
+foreach ($f in gci $folderIn) {
+	.\hca.exe $f.FullName
+	Remove-Item -LiteralPath $f.FullName
 }

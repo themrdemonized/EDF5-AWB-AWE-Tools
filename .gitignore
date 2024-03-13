@@ -3,3 +3,6 @@ VOICES_IN_WAV/**
 VOICES_OUT/**
 .vscode
 __pycache__
+*.wav
+*.hca
+*.awb

@@ -1,4 +1,4 @@
-$folderIn = ".\VOICES_IN_WAV"
+$folderIn = ".\VOICES_IN"
 $folderOut = ".\VOICES_OUT"
 
 $folderInFileCount = [int]([System.IO.Directory]::GetFiles("$folderIn", "*.wav").Count)
@@ -18,3 +18,6 @@ foreach ($f in gci $folderOut) {
 	$newNameBIN = $f.Name.Replace(".hca", ".bin")
 	Rename-Item -LiteralPath $f.FullName -NewName $newNameBIN
 }
+
+$folder = ".\VOICES_OUT"
+.\AWB_repacker.exe $folder
