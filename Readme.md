@@ -7,6 +7,7 @@ AWB editing is dividing into 3 steps
 2. Pack WAV files into new OUT.AWB file (2_PackWAVToAWB.ps1)
 
 Tools used:
+
 awe_parser.py from Another EDF Tools repo with my edits to handle different file counts in AWB and AWE
 AWB_repacker
 HCA decoder
