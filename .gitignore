@@ -1,6 +1,7 @@
 VOICES_IN/**
 VOICES_IN_WAV/**
 VOICES_OUT/**
+VOICES_TEMP
 .vscode
 __pycache__
 *.wav
